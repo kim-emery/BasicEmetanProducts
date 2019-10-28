@@ -1,0 +1,231 @@
+/*
+Version 1.2.1
+
+
+*/
+
+
+p, h1, h2, h3, body, html, table{
+  margin: 0px;
+  padding: 0px;
+  color:#0B1317;
+
+}
+
+html{
+  height: 100%;
+}
+
+ a.linkLogo{
+   text-decoration: none; /* no underline for the hyperlink */
+ }
+
+body{
+  background-color: #FFF;
+
+}
+
+h1{
+  font-size: 2em;
+	font-family: 'Droid Serif', serif;
+}
+
+h2, h3{
+  font-family: 'Droid Serif', serif;
+}
+p{
+  font-size: 0.7em;
+  font-family: 'Droid Serif', serif;
+
+}
+
+
+ul{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/* Mobile First Layout */
+/*main structure sections */
+
+
+/*main content paragraphs*/
+.midContent{
+  padding-left: 4px;
+  padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+#footerBox{
+  background-color: #0B1317;
+  height: 20px;
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  color: grey;
+
+  text-align: center;
+  display: none;
+
+}
+
+#topHeader{
+
+	text-align: center;
+	width: 100%;
+  /*    vh */
+	height: 16vh;
+  background-color: white;
+  top: 0;
+  /* horizontaldist, verticalDist, bkurRadius, SpreadRadius, color */
+  /*comma-separate list of shadows */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+/* Desktop styles */
+/* Media Query Breakpoints  - Desktop */
+@media only screen and (min-width: 768px){
+
+  h1{
+    font-size: 2em;
+    font-family: 'Droid Serif', serif;
+  }
+
+  html, body{
+    height: 100%;
+    width: 100%;
+  }
+
+  .topHeader {
+    position: sticky;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(249, 255, 251, 0.596);
+    /* horizontaldist, verticalDist, blurRadius, SpreadRadius, color */
+    /* comma-separated list of shadows */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 10px 0 rgba(130, 206, 183, 0.19);
+  }
+
+  .topHeaderInner{
+    height: inherit;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #logoName{
+    text-align: left;
+    float: left;
+    
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 60px; /*set to same as parent explicitly*/
+    line-height: 60px;;
+
+  }
+
+
+  /* navigation link bar parent */
+  .linkbar{
+    overflow: hidden;
+    
+  }
+
+  
+
+  /* default links in the navigation bar */
+  .linkBar a{
+    float: right;
+    
+    display: block;
+    
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    height: 60px; /*set to same as parent explicitly*/
+    line-height: 60px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .linkBar a:hover {
+    background-color: rgba(169, 255, 229, 0.19);
+    
+  }
+
+  #imageReelBox{
+    /*padding: 10px;*/
+  }
+
+  .spaImages{
+    
+    width:600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    box-shadow:0 0 25px rgb(122, 122, 122);
+    /*padding: 10px; this makes a cool border though*/
+    
+  }
+
+  .imageTextSection{
+    display:block;
+    width:100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+  }
+  .spaImages img{
+   
+    float: left
+  }
+
+  .imageFloatRight{
+    float: right;
+    width: calc(100% - 620px);
+           
+  }
+
+  .imageFloatRight p{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    font-size: 1em;
+  }
+  .midBox{
+    height: 2000px;
+    width:70%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  #footerBox{
+    background-color: #0B1317;
+    height: 40px;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    color: grey;
+    text-align: center;
+  }
+
+
+
+
+
+}
