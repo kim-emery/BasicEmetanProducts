@@ -30,7 +30,7 @@ body{
 }
 
 h1{
-  font-size: 2em;
+  font-size: 8vw;
 	font-family: 'Droid Serif', serif;
 }
 
@@ -122,6 +122,10 @@ ul{
   width:100%;
   margin: auto;
   margin-top: 50px;
+}
+
+.midContent{
+  padding: 8px;
 }
 
 
